@@ -1,0 +1,49 @@
+{
+  "name": "CrudOnArray",
+  "displayName": "CrudOnArray",
+  "publisher": "KeshavSoft",
+  "description": "KeshavSoft Extension to enhance the development of web applications",
+  "version": "1.23.3",
+  "engines": {
+    "vscode": "^1.96.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/keshavsoft/CrudOnArray.git"
+  },
+  "license": "license.txt",
+  "activationEvents": [],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "GenerateWMail.OnlyFrontEndNonSec",
+        "title": "GenerateWMail OnlyFrontEndNonSec"
+      }
+    ],
+    "menus": {
+      "explorer/context": []
+    }
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.6",
+    "@types/node": "18.x",
+    "@types/vscode": "^1.96.0",
+    "@vscode/test-cli": "^0.0.4",
+    "@vscode/test-electron": "^2.3.8",
+    "eslint": "^8.56.0",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "fs-extra": "^11.3.0",
+    "fse": "^4.0.1"
+  }
+}
